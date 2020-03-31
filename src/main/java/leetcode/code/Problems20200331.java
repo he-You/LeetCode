@@ -87,11 +87,11 @@ public class Problems20200331 {
      */
     public void insertSort(int arr[]){
         for(int i = 1; i < arr.length; i++){
-            int rt = arr[i];
+            int temp = arr[i];
             for(int j = i - 1; j >= 0; j--){
-                if(rt < arr[j]){
+                if(temp < arr[j]){
                     arr[j + 1] = arr[j];
-                    arr[j] = rt;
+                    arr[j] = temp;
                 }else{
                     break;
                 }
